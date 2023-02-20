@@ -6,8 +6,10 @@ export default function App() {
   console.log("App executed")
   return (
     <View style={styles.container}>
-      <Image style={styles.logo} source={require('./assets/icon.png')}/>
-      <Text>GDetectio</Text>
+      <Image style={styles.background1} source={require('./assets/1st.jpg')}/>
+      <Image style={styles.logo} source={require('./assets/green.gif')}/>
+      <Image style={styles.background2} source={require('./assets/2nd.jpg')}/>
+      <Text>Starting...</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -21,7 +23,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   logo: {
-    width: 100,
-    height: 100,
+    width: 220,
+    height: 220,
+  },
+  background1: {
+    position: 'absolute',
+    top: -1,
+    bottom: 0,
+    left: 0,
+    right: -100,
+  },
+  background2: {
+    position: 'absolute',
+    top: 548,
+    bottom: -1,
+    left: -100,
+    right: 0,
   },
 });
