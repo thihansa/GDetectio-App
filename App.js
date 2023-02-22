@@ -1,17 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import {Provider as PaperProvider} from 'react-native-paper';
+import { Login } from './Pages/Login/login';
+
 
 export default function App() {
   console.log("App executed")
   return (
-    <View style={styles.container}>
-      <Image style={styles.background1} source={require('./assets/1st.jpg')}/>
-      <Image style={styles.logo} source={require('./assets/green.gif')}/>
-      <Image style={styles.background2} source={require('./assets/2nd.jpg')}/>
-      <Text>Starting...</Text>
-      <StatusBar style="auto" />
-    </View>
+    <PaperProvider>
+      <Login/>
+    </PaperProvider>
+    
+    // <View style={styles.container}>
+    //   <Image style={styles.background1} source={require('./assets/1st.jpg')}/>
+    //   <Image style={styles.logo} source={require('./assets/green.gif')}/>
+    //   <Image style={styles.background2} source={require('./assets/2nd.jpg')}/>
+    //   <Text>Starting...</Text>
+    //   <StatusBar style="auto" />
+    // </View>
   );
 }
 
