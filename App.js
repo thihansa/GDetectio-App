@@ -3,13 +3,15 @@ import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import {Provider as PaperProvider} from 'react-native-paper';
 import { Login } from './Pages/Login/login';
+import { RegisterScreen } from './Pages/Register/register';
 
 
 export default function App() {
   console.log("App executed")
   return (
     <PaperProvider>
-      <Login/>
+      {/* <Login/> */}
+      <RegisterScreen/>
     </PaperProvider>
     
     // <View style={styles.container}>
