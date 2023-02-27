@@ -10,8 +10,8 @@ export default function App() {
   console.log("App executed")
   return (
     <PaperProvider>
-      {/* <Login/> */}
-      <RegisterScreen/>
+      <Login/>
+      {/* <RegisterScreen/> */}
     </PaperProvider>
     
     // <View style={styles.container}>
