@@ -7,54 +7,46 @@ export const loginStyle = StyleSheet.create ({
         justifyContent:"center",
         alignItems:"center",
         flexDirection:"row",
-        backgroundColor:"#b2e0ae"
+        backgroundColor:"#ffffff"
+    },
+    image: {
+        width: 400,
+        height: 500,
+        marginLeft: 5,
+        marginBottom: -450,
+        marginTop: -390
     },
     view: {
         width:"80%"
     },
-    cardTitle: {
+    bottomView: {
+        // flex: 1.5,
+        width:395,
+        height: 580,
+        marginLeft:5,
+        backgroundColor: "#b3e6c9",
+        bottom: -390,
+        borderTopLeftRadius:60,
+        borderTopRightRadius: 60
+    },
+    title: {
         color: "#000000",
-        marginLeft: 60,
-        fontSize: 30,
-        fontWeight: 'bold'
+        // marginBottom: 20,
+        fontSize: 34,
+        overflow: "hidden"
     },
     Button: {
         margin: 2,
         marginLeft: 0,
-        marginRight: 0
+        marginRight: 0,
+        marginTop: 10
     },
     Button1: {
         backgroundColor:"#000000",
         margin: 2,
         marginLeft: 0,
-        marginRight: 0
-    },
-    logo: {
-        width: 415,
-        height: 370,
-        marginLeft: -50,
-        marginTop: -100,
-        marginRight: -60,
-        marginBottom: 20
-    },
-    label: {
-        width:"100%",
-        overflow:'hidden',
-        borderTopRightRadius: 20, 
-        borderTopLeftRadius: 20,
-        borderBottomLeftRadius: 20,
-        borderBottomRightRadius: 20,
-        marginBottom:10,
-        marginTop: 10,
-        justifyContent:"center",
-        opacity:20
-    },
-    background1: {
-        // position: 'absolute',
-        top: 0,
-        bottom: 100,
-        left: -40,
-        right: 10,
+        marginRight: 0,
+        marginTop: 10
     },
     label1: {
         textAlign: 'left',
@@ -69,13 +61,13 @@ export const loginStyle = StyleSheet.create ({
         borderRadius: 20,
         width: '100%',
         marginBottom:10,
-        marginTop: 10,
+        marginTop: 20,
         overflow:'hidden'
     },
     ChildViewStyle:{
  
-        borderWidth: 2, 
-        borderColor: '#009900',
+        // borderWidth: 2, 
+        // borderColor: '#ffffff',
         width: '100%',
         // marginTop: 20,
         // marginBottom:20,
