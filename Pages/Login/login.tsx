@@ -4,7 +4,14 @@ import {Button, Card, TextInput} from 'react-native-paper';
 import { loginStyle } from './login.style';
 import { LinearGradient } from 'expo-linear-gradient';
 
-export const Login = () => {
+
+interface LoginProps {
+    navigation:any;
+}
+
+export const Login = (props:LoginProps) => {
+
+    const register = () => props.navigation.navigate("Register")
 
     return (
         <SafeAreaView style={loginStyle.content}>
@@ -13,8 +20,8 @@ export const Login = () => {
                 <View style={loginStyle.bottomView}>
                     <View style={{padding: 40}}>
                         <Text style={loginStyle.title}>Welcome</Text>
-                        <Text style={{marginTop: 10, marginLeft: 5}}>Don't have an account?</Text>
-                        <Button textColor="#000000" style={{marginLeft: 50, marginTop: -29}}>Register</Button>
+                        <Text style={{marginTop: 10, marginLeft: 5, fontSize: 15}}>Don't have an account?</Text>
+                        <Button onPress={register} textColor="#000000" style={{marginLeft: 70, marginTop: -29}}>Register</Button>
                         <LinearGradient colors={['#e9fce9', '#bdf5bd', '#79d2a0']} start={{x: 0, y: 0.5}} end={{x: 1, y: 1}}
                         style={loginStyle.LinearGradientStyle}>
                         <View style={loginStyle.ChildViewStyle}>

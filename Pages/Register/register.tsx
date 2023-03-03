@@ -1,7 +1,6 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, View, ImageBackground, Text } from 'react-native';
 import {Appbar, Button, Card, TextInput} from 'react-native-paper';
-import AppbarAction from 'react-native-paper/lib/typescript/components/Appbar/AppbarAction';
 import { registerStyle } from './register.style';
 import { LinearGradient } from 'expo-linear-gradient';
 
