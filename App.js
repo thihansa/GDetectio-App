@@ -6,6 +6,7 @@ import { Login } from './Pages/Login/login';
 import { RegisterScreen } from './Pages/Register/register';
 import {FirstPage} from './Pages/FirstPage/firstPage'
 import  { AppNavigator } from './app.navigator';
+import { Home } from './Pages/Home/home';
 
 
 export default function App() {
@@ -15,7 +16,8 @@ export default function App() {
       {/* <Login/> */}
       {/* <RegisterScreen/> */}
       {/* <FirstPage/> */}
-      <AppNavigator/>
+      <Home/>
+      {/* <AppNavigator/> */}
     </PaperProvider>
   );
 }

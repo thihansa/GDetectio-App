@@ -11,6 +11,7 @@ interface LoginProps {
 
 export const Login = (props:LoginProps) => {
 
+    const slider = () => props.navigation.navigate("Slider")
     const register = () => props.navigation.navigate("Register")
 
     return (
@@ -36,7 +37,7 @@ export const Login = (props:LoginProps) => {
                         </View>
                         </LinearGradient>
 
-                        <Button mode="contained" style={loginStyle.Button1}>Login</Button>
+                        <Button onPress={slider} mode="contained" style={loginStyle.Button1}>Login</Button>
                         <Button textColor="#000000" uppercase={false} style={loginStyle.Button}>Forgot email/password</Button>
                     </View>
                 </View>    
