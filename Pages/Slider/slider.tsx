@@ -5,6 +5,13 @@ import {
 import {styles} from './slider.style';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { Button } from 'react-native-paper';
+import { Home } from '../Home/home';
+import {Asset} from 'expo-asset';
+
+const imageURI = Asset.fromModule(require('/App/assets/rem.png')).uri;
+const imageURI2 = Asset.fromModule(require('/App/assets/re.png')).uri;
+const imageURI3 = Asset.fromModule(require('/App/assets/f.png')).uri;
+const imageURI4 = Asset.fromModule(require('/App/assets/re2.png')).uri;
 
 export const Slider = () => {
   
@@ -45,18 +52,7 @@ export const Slider = () => {
     <>
       {
         showRealApp ? (
-            <SafeAreaView style={styles.container}>
-                <View style={styles.container}>
-                    <Text style={styles.titleStyle}>
-                        React Native App Intro Slider using AppIntroSlider
-                    </Text>
-                    <Text>
-                        This will be your screen when you click Skip
-                        from any slide or Done button at last
-                    </Text>
-                    <Button onPress={() => setShowRealApp(false)}>Show Intro Slider again </Button>
-                </View>
-            </SafeAreaView>
+            <Home/>
         ) : (
             <AppIntroSlider
                 data={slides}
@@ -73,81 +69,46 @@ export const Slider = () => {
 };
 
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     padding: 10,
-//     justifyContent: 'center',
-//   },
-//   titleStyle: {
-//     padding: 10,
-//     textAlign: 'center',
-//     fontSize: 18,
-//     fontWeight: 'bold',
-//   },
-// });
-
 const slides = [
   {
     key: 's1',
-    text: 'Best Recharge offers',
-    title: 'Mobile Recharge',
+    text: 'Let us join together and make the world a better place',
+    title: 'Welcome to GDetectio',
     image: {
       uri:
-        'https://raw.githubusercontent.com/tranhonghan/images/main/intro_mobile_recharge.png',
+      imageURI,
+        
     },
-    backgroundColor: '#20d2bb',
+    backgroundColor: '#e6fee6',
   },
   {
     key: 's2',
-    title: 'Flight Booking',
-    text: 'Upto 25% off on Domestic Flights',
+    title: 'Insert Image',
+    text: 'Insert an image of the diseased leaf or fruit using the insert image tab',
     image: {
       uri:
-        'https://raw.githubusercontent.com/tranhonghan/images/main/intro_flight_ticket_booking.png',
+      imageURI2,
     },
-    backgroundColor: '#febe29',
+    backgroundColor: '#e6fee6',
   },
   {
     key: 's3',
-    title: 'Great Offers',
-    text: 'Enjoy Great offers on our all services',
+    title: 'Results',
+    text: 'Treat your plant according to the results and the curations provided',
     image: {
       uri:
-        'https://raw.githubusercontent.com/tranhonghan/images/main/intro_discount.png',
+      imageURI3,
     },
-    backgroundColor: '#22bcb5',
+    backgroundColor: '#e6fee6',
   },
   {
     key: 's4',
-    title: 'Best Deals',
-    text: ' Best Deals on all our services',
+    title: 'Get started',
+    text: 'Enjoy !',
     image: {
       uri:
-        'https://raw.githubusercontent.com/tranhonghan/images/main/intro_best_deals.png',
+      imageURI4,
     },
-    backgroundColor: '#3395ff',
-  },
-  {
-    key: 's5',
-    title: 'Bus Booking',
-    text: 'Enjoy Travelling on Bus with flat 100% off',
-    image: {
-      uri:
-        'https://raw.githubusercontent.com/tranhonghan/images/main/intro_bus_ticket_booking.png',
-    },
-    backgroundColor: '#f6437b',
-  },
-  {
-    key: 's6',
-    title: 'Train Booking',
-    text: ' 10% off on first Train booking',
-    image: {
-      uri:
-        'https://raw.githubusercontent.com/tranhonghan/images/main/intro_train_ticket_booking.png',
-    },
-    backgroundColor: '#febe29',
+    backgroundColor: '#e6fee6',
   },
 ];

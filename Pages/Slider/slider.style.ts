@@ -18,19 +18,22 @@ export const styles = StyleSheet.create({
     },
     introTitleStyle:{
       fontSize:25,
-      color:'white',
+      color:'#046204',
       textAlign:'center',
-      marginBottom:16,
+      marginBottom:0,
+      marginTop:50,
       fontWeight:'bold'
     },
     introImageStyle:{
-      width:200,
-      height:200
+      width:300,
+      height:300,
+      alignContent:'center'
     },
     introTexStyle:{
       fontSize:18,
-      color:'white',
+      color:'#059405',
       textAlign:'center',
-      paddingVertical:30
+      paddingVertical:30,
+      paddingLeft:10
     }
   });

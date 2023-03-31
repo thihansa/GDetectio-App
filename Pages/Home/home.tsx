@@ -3,6 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import {Provider as PaperProvider} from 'react-native-paper';
 import { homeStyle } from './home.style';
+import Icon from 'react-native-vector-icons';
 
 export const Home = () => {
     return (
@@ -11,7 +12,9 @@ export const Home = () => {
         <Text style={homeStyle.title}>GDetectio</Text>
         <Image style={homeStyle.user} source={require('/App/assets/user.png')}/>
         <View style={homeStyle.bottomView}>
-            <View style={{padding: 40}}></View>
+            <View style={{padding: 40}}>
+              {/* TO-DO */}
+            </View>
         </View>
       </View>
     );
