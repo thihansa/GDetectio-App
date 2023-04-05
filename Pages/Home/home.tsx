@@ -4,18 +4,21 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import {Provider as PaperProvider} from 'react-native-paper';
 import { homeStyle } from './home.style';
 import Icon from 'react-native-vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export const Home = () => {
     return (
-      <View>
+      <View style={homeStyle.content}>
         <Image style={homeStyle.logo} source={require('/App/assets/logo.png')}/>
-        <Text style={homeStyle.title}>GDetectio</Text>
         <Image style={homeStyle.user} source={require('/App/assets/user.png')}/>
-        <View style={homeStyle.bottomView}>
-            <View style={{padding: 40}}>
-              {/* TO-DO */}
-            </View>
-        </View>
+        
+        <Text style={homeStyle.title}>Welcome to GDetectio !</Text>
+        {/* <LinearGradient colors={['#98D9C2','#79d2a0', '#ABC8C0' ]} start={{x: 0, y: 0.5}} end={{x: 1, y: 1}} */}
+        <LinearGradient colors={['#40bf79','#32cd32', '#a6ff4d' ]} start={{x: 0, y: 0.5}} end={{x: 1, y: 1}}
+                        style={homeStyle.LinearGradientStyle}>
+          <View style={homeStyle.ChildViewStyle}></View>
+        </LinearGradient>
+        
       </View>
     );
 }

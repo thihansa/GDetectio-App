@@ -8,6 +8,10 @@ import {FirstPage} from './Pages/FirstPage/firstPage';
 import  { AppNavigator } from './app.navigator';
 import { Home } from './Pages/Home/home';
 import { Slider } from './Pages/Slider/slider';
+import { NavigationContainer } from '@react-navigation/native';
+import Tabs from './navigation/tabs';
+
+
 
 
 export default function App() {
@@ -19,7 +23,10 @@ export default function App() {
       {/* <RegisterScreen/> */}
       {/* <Home/> */}
       {/* <AppNavigator/> */}
-      <Slider/>
+      {/* <Slider/> */}
+      <NavigationContainer>
+        <Tabs/>
+      </NavigationContainer>
     </PaperProvider>
   );
 }
