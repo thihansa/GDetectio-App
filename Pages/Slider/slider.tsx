@@ -8,8 +8,8 @@ import { Button } from 'react-native-paper';
 import { Home } from '../Home/home';
 import {Asset} from 'expo-asset';
 
-const imageURI = Asset.fromModule(require('/App/assets/rem.png')).uri;
-const imageURI2 = Asset.fromModule(require('/App/assets/re.png')).uri;
+const imageURI = Asset.fromModule(require('/App/assets/bd.png')).uri;
+const imageURI2 = Asset.fromModule(require('/App/assets/inb.png')).uri;
 const imageURI3 = Asset.fromModule(require('/App/assets/f.png')).uri;
 const imageURI4 = Asset.fromModule(require('/App/assets/re2.png')).uri;
 
@@ -104,7 +104,7 @@ const slides = [
   {
     key: 's4',
     title: 'Get started',
-    text: 'Enjoy !',
+    text: ' ',
     image: {
       uri:
       imageURI4,

@@ -17,13 +17,14 @@ export const loginStyle = StyleSheet.create ({
         marginTop: -390
     },
     view: {
-        width:"80%"
+        // width:"80%"
     },
     bottomView: {
         // flex: 1.5,
-        width:395,
+        width:360,
         height: 580,
-        marginLeft:5,
+        marginLeft:22,
+        marginRight:20,
         backgroundColor: "#ffffff",
         bottom: -390,
         borderTopLeftRadius:60,

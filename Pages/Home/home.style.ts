@@ -13,7 +13,7 @@ export const homeStyle = StyleSheet.create ({
         color: "#000000",
         // marginBottom: 20,
         fontSize: 27,
-        marginTop: 15,
+        marginTop: 20,
         marginLeft: 15,
         overflow: "hidden",
         fontWeight: 'bold'
@@ -21,8 +21,8 @@ export const homeStyle = StyleSheet.create ({
     user: {
         width: 40,
         height:40,
-        marginTop: -50,
-        marginLeft: 340,
+        marginTop: 60,
+        marginLeft: 310,
         // alignContent: 'flex-end'
     },
     bottomView: {
@@ -38,7 +38,7 @@ export const homeStyle = StyleSheet.create ({
         borderBottomRightRadius: 30
     },
     content:{
-        backgroundColor: '#d3f8d3',
+        backgroundColor: '#ffffff',
         height: 900,
         // marginTop: 200
     
@@ -46,19 +46,19 @@ export const homeStyle = StyleSheet.create ({
     LinearGradientStyle: {
         height: '25%',
         borderRadius: 20,
-        width: '93%',
+        width: '92%',
         marginBottom:10,
         marginTop: 30,
         marginLeft:15,
         marginRight:15,
         overflow:'hidden',
-        opacity:0.5
+        // opacity:0.5
     },
     ChildViewStyle:{
  
         // borderWidth: 2, 
         // borderColor: '#ffffff',
-        width: '93%',
+        width: '92%',
         // marginTop: 20,
         // marginBottom:20,
         height: 100,
