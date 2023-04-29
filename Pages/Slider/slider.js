@@ -8,10 +8,10 @@ import { Button } from 'react-native-paper';
 import { Home } from '../Home/home';
 import {Asset} from 'expo-asset';
 
-const imageURI = Asset.fromModule(require('/App/assets/bd.png')).uri;
-const imageURI2 = Asset.fromModule(require('/App/assets/inb.png')).uri;
-const imageURI3 = Asset.fromModule(require('/App/assets/f.png')).uri;
-const imageURI4 = Asset.fromModule(require('/App/assets/re2.png')).uri;
+const imageURI = Asset.fromModule('E:/FINAL Prototype/App/assets/bd.png').uri;
+const imageURI2 = Asset.fromModule('E:/FINAL Prototype/App/assets/inb.png').uri;
+const imageURI3 = Asset.fromModule('E:/FINAL Prototype/App/assets/f.png').uri;
+const imageURI4 = Asset.fromModule('E:/FINAL Prototype/App/assets/re2.png').uri;
 
 export const Slider = () => {
   
