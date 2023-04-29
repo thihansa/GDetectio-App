@@ -5,11 +5,11 @@ import { loginStyle } from './login.style';
 import { LinearGradient } from 'expo-linear-gradient';
 
 
-interface LoginProps {
-    navigation:any;
+const LoginProps = {
+    navigation: null
 }
 
-export const Login = (props:LoginProps) => {
+export const Login = (props) => {
 
     const slider = () => props.navigation.navigate("Slider")
     const register = () => props.navigation.navigate("Register")
@@ -17,7 +17,7 @@ export const Login = (props:LoginProps) => {
     return (
         <SafeAreaView style={loginStyle.content}>
             <View >
-                <ImageBackground style={loginStyle.image} source={require('/App/assets/baf.jpg')}/>
+                <ImageBackground style={loginStyle.image} source={require("E:/FINAL Prototype/App/assets/baf.jpg")}/>
                 <View style={loginStyle.bottomView}>
                     <View style={{padding: 25}}>
                         <Text style={loginStyle.title}>Welcome</Text>
