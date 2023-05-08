@@ -75,7 +75,7 @@ export const Home = () => {
 
         <TouchableOpacity style={homeStyle.touch1} onPress={() => {displayModal(true);}}>
           <LinearGradient colors={['#98D9C2','#79d2a0', '#ABC8C0' ]} start={{x: 0, y: 0.5}} end={{x: 1, y: 1}} style={homeStyle.LinearGradientStyle}>
-          {/* <LinearGradient colors={['#000000','#535657','#68A691']} start={{x: 0, y: 0.5}} end={{x: 1, y: 1}} */}
+          
                         
             <View style={homeStyle.ChildViewStyle}></View>
             <Text style={homeStyle.disease}>Anthracnose</Text>
@@ -108,7 +108,7 @@ export const Home = () => {
                 * Avoid fruit injury. Do proper bagging of fruits.
               </Text>
               <View style={homeStyle.close2}>  
-                <Button style={{colors:'black'}} onPress={() => {newDisplayModal(!newModalState.isVisible);}} title="Okay"></Button>
+                <Button style={{backgroundColor:'black'}} onPress={() => {newDisplayModal(!newModalState.isVisible);}} title="Okay"></Button>
               </View>
               </ScrollView>      
         </Modal> 
