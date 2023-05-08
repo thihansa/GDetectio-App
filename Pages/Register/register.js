@@ -8,7 +8,7 @@ export const RegisterScreen = () => {
     return (
         <SafeAreaView style={registerStyle.safe}>
             <View>
-                <ImageBackground style={registerStyle.image} source={require("E:/FINAL Prototype/App/assets/baf.jpg")}/>
+                <ImageBackground style={registerStyle.image} source={require("../assets/baf.jpg")}/>
                 <View style={registerStyle.bottomView}>
                     <View style={{padding: 30}}>
                         <Text style={registerStyle.title}>Register</Text>

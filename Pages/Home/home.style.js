@@ -3,17 +3,17 @@ import { StyleSheet } from 'react-native';
 export const homeStyle = StyleSheet.create ({
 
     logo: {
-        width: 60,
-        height:60,
-        marginTop: 40,
-        marginLeft: 5
+        width: 65,
+        height:65,
+        marginTop: 10,
+        marginLeft: 290
         // alignContent: 'flex-end'
     },
     title: {
         color: "#000000",
         // marginBottom: 20,
         fontSize: 27,
-        marginTop: -750,
+        marginTop: -610,
         marginLeft: 15,
         overflow: "hidden",
         fontWeight: 'bold'
@@ -58,11 +58,11 @@ export const homeStyle = StyleSheet.create ({
         height: '9%',
         borderRadius: 20,
         width: '92%',
-        marginBottom:950,
+        marginBottom:940,
         marginTop: 20,
         marginLeft:15,
         marginRight:15,
-        overflow:'hidden',
+        // overflow:'hidden',
         // opacity:0.5
     },
     ChildViewStyle:{
@@ -120,11 +120,11 @@ export const homeStyle = StyleSheet.create ({
     },
     image: {
         width: 400,
-        height: 800,
+        height: 790,
         marginLeft: 0,
         marginRight:0,
         marginBottom: -60,
-        marginTop: -10,
+        marginTop: -110,
         opacity:0.35
     },
     modal:{

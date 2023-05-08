@@ -22,9 +22,14 @@ export const inputStyle = StyleSheet.create ({
         marginTop:-70
     },
     title: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        marginBottom: 10,
+        color: "#000000",
+        // marginBottom: 20,
+        fontSize: 25,
+        marginTop: -40,
+        marginBottom:20,
+        marginLeft: 10,
+        overflow: "hidden",
+        fontWeight: 'bold'
     },
     button: {
         backgroundColor: '#1e7b1e',
@@ -45,7 +50,7 @@ export const inputStyle = StyleSheet.create ({
     },
     image: {
         width: 400,
-        height: 1100,
+        height: 1400,
         opacity:0.35,
         marginTop:0,
         marginBottom: 100

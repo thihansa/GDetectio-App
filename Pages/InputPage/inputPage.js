@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Image, View, Platform , Text, ScrollView, TouchableOpacity, ImageBackground } from 'react-native';
+import { Button, Image, View, Platform , Text, ScrollView, TouchableOpacity, ImageBackground, SafeAreaView } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 // import { ImageManipulator } from 'expo';
 // import  manipulateAsync from 'expo-image-manipulator';
@@ -168,7 +168,8 @@ export const InputPage = () => {
     
     <View style={{  }}>
       <View><ImageBackground style={inputStyle.image}  source={require("../assets/k62.jpg")}/></View>
-      <View style={{  marginTop:-800 }}>
+      <View style={{  marginTop:-1350 }}>
+      <Text style={inputStyle.title}>Get Detected With GDetectio</Text>
       <TouchableOpacity style={inputStyle.button} onPress={pickImage}>
           <Text style={inputStyle.buttonText}>Leaf and Fruit</Text>
       </TouchableOpacity>
@@ -180,8 +181,14 @@ export const InputPage = () => {
       </TouchableOpacity>
       </View>
       {/* <Button style={{ marginBottom:10 }} title="Leaf only" onPress={pickImage} /> */}
-      {image && <Image source={{ uri: image }} style={{ width: 150, height: 150,borderRadius: 20 }} />}
-      {response !== '' && <Text style={{ marginTop:15}} >{response}</Text>}
+      {image && <Image source={{ uri: image }} style={{ width: 150, height: 150,borderRadius: 20 , marginLeft:10}} />}
+      
+      {response !== '' && 
+      <View style={{ marginTop:15, marginLeft:10, marginBottom:310, backgroundColor:'#e6fee6', borderRadius:20, marginRight:10}}>
+        <Text style={{marginLeft:10, marginBottom:5, marginTop:5, marginRight:5}}>
+        {response}</Text>
+      </View>}
+        
     </View>
     </ScrollView>
   );

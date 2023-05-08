@@ -24,11 +24,13 @@ export const Home = () => {
   }
     return (
       <SafeAreaView>
+        <Image style={homeStyle.logo} source={require('../assets/logo.png')}/>
         <ImageBackground style={homeStyle.image}  source={require("../assets/k62.jpg")}/>
+        
       <View >
         
-        {/* <Image style={homeStyle.logo} source={require('/App/assets/logo.png')}/> */}
-        <Image style={homeStyle.user} source={require("E:/FINAL Prototype/App/assets/man.png")}/>
+        
+        {/* <Image style={homeStyle.user} source={require("E:/FINAL Prototype/App/assets/man.png")}/> */}
         <Text style={homeStyle.title}>Welcome to GDetectio !</Text>
         <Text style={homeStyle.text}>Diseases identified in our app</Text>
 
@@ -52,22 +54,18 @@ export const Home = () => {
                 Solutions 
               </Text>
               <Text style={{fontSize:18,marginLeft:20,marginTop:10, marginRight:10}}>
-                * Spraying with copper oxychloride 50% WP @ 4 gm/lit
+                * Apply fungicide (Daconil 3:1) twice a week
               </Text>
               <Text style={{fontSize:18,marginLeft:20,marginTop:10, marginRight:10}}>
-                * Captain 75% WS @ 2.5 gm/lit
+                * Apply cinnamon oil (5:1/oil(ml)): 1litre of water
               </Text>
               <Text style={{fontSize:18,marginLeft:20,marginTop:10, marginRight:10}}>
-                * Mancozeb 75% WP @ 2.5 gm/litre of water
+                * Application time after 4 pm
               </Text>
-              <Text style={{fontSize:18,marginLeft:20,marginTop:10, marginRight:10}}>
-                * Effective control of anthracnose can be achieved by sprays of Bordeaux mizture (3:3:50) at 7 days interval.
-              </Text>
-              <Text style={{fontSize:18,marginLeft:20,marginTop:10, marginRight:10}}>
-                * For post harvest treatment 20 min dip treatment in 500 ppm tetracycline is effective.
-              </Text>
-              <View style={homeStyle.close}>  
-                <Button style={{colors:'black'}} onPress={() => {displayModal(!modalState.isVisible);}} title="Okay"></Button>
+              <View style={homeStyle.close}>
+                <TouchableOpacity style = {{backgroundColor: '#1e7b1e', borderRadius: 5, marginRight:5}} onPress={() => {displayModal(!modalState.isVisible);}}>
+                  <Text style={{color: '#fff', fontSize: 14, padding: 10, marginLeft:45}}>Okay</Text>
+                </TouchableOpacity>
               </View>
             </View>
             </ScrollView>         
@@ -102,13 +100,18 @@ export const Home = () => {
                 Solutions 
               </Text>
               <Text style={{fontSize:18,marginLeft:20,marginTop:10, marginRight:10}}>
-                * Spray Copper oxychloride (3gms. per liter) or carbendazim or Thiophonate methyl (0.5gms.) before onset of winter fruiting.
+                * Apply fungicide (Daconil 3:1) twice a week
               </Text>
               <Text style={{fontSize:18,marginLeft:20,marginTop:10, marginRight:10}}>
-                * Avoid fruit injury. Do proper bagging of fruits.
+                * Apply cinnamon oil (5:1/oil(ml)): 1litre of water
               </Text>
-              <View style={homeStyle.close2}>  
-                <Button style={{backgroundColor:'black'}} onPress={() => {newDisplayModal(!newModalState.isVisible);}} title="Okay"></Button>
+              <Text style={{fontSize:18,marginLeft:20,marginTop:10, marginRight:10}}>
+                * Application time after 4 pm
+              </Text>
+              <View style={homeStyle.close2}>
+                <TouchableOpacity style = {{backgroundColor: '#1e7b1e', borderRadius: 5, marginRight:5}} onPress={() => {newDisplayModal(!newModalState.isVisible);}}>
+                  <Text style={{color: '#fff', fontSize: 14, padding: 10, marginLeft:45}}>Okay</Text>
+                </TouchableOpacity>
               </View>
               </ScrollView>      
         </Modal> 

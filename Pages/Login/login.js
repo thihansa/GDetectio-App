@@ -17,7 +17,7 @@ export const Login = (props) => {
     return (
         <SafeAreaView style={loginStyle.content}>
             <View >
-                <ImageBackground style={loginStyle.image} source={require("E:/FINAL Prototype/App/assets/baf.jpg")}/>
+                <ImageBackground style={loginStyle.image} source={require("../assets/baf.jpg")}/>
                 <View style={loginStyle.bottomView}>
                     <View style={{padding: 25}}>
                         <Text style={loginStyle.title}>Welcome</Text>

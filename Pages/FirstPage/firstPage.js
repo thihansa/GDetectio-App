@@ -9,9 +9,9 @@ export const FirstPage = () => {
   console.log("App executed")
   return (
     <View style={firstPageStyles.container}>
-      <Image style={firstPageStyles.background1} source={require("E:/FINAL Prototype/App/assets/1st.jpg")}/>
-      <Image style={firstPageStyles.logo} source={require("E:/FINAL Prototype/App/assets/green.gif")}/>
-      <Image style={firstPageStyles.background2} source={require("E:/FINAL Prototype/App/assets/2nd.jpg")}/>
+      <Image style={firstPageStyles.background1} source={require("../assets/1st.jpg")}/>
+      <Image style={firstPageStyles.logo} source={require("../assets/green.gif")}/>
+      <Image style={firstPageStyles.background2} source={require("../assets/2nd.jpg")}/>
       <Text>Starting...</Text>
       <StatusBar style="auto" />
     </View>
