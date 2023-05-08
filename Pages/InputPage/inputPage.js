@@ -184,7 +184,7 @@ export const InputPage = () => {
       {image && <Image source={{ uri: image }} style={{ width: 150, height: 150,borderRadius: 20 , marginLeft:10}} />}
       
       {response !== '' && 
-      <View style={{ marginTop:15, marginLeft:10, marginBottom:310, backgroundColor:'#b3e6c9', borderRadius:20, marginRight:10}}>
+      <View style={{ marginTop:15, marginLeft:10, marginBottom:410, backgroundColor:'#b3e6c9', borderRadius:20, marginRight:10}}>
         <Text style={{marginLeft:10, marginBottom:5, marginTop:5, marginRight:5, fontSize:15}}>
         {response}</Text>
       </View>}

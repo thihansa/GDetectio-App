@@ -9,6 +9,7 @@ import  { AppNavigator } from './app.navigator';
 import { Home } from './Pages/Home/home';
 import { Slider } from './Pages/Slider/slider';
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import Tabs from './navigation/tabs';
 
 
@@ -17,6 +18,7 @@ import Tabs from './navigation/tabs';
 
 export default function App() {
   console.log("App executed")
+  const Stack = createStackNavigator();
   return (
     <PaperProvider>
       {/* <FirstPage/> */}
@@ -26,8 +28,16 @@ export default function App() {
       {/* <AppNavigator/> */}
       {/* <Slider/> */}
       <NavigationContainer>
-        <Tabs/>
+        <Stack.Navigator screenOptions={{
+          headerShown: false
+          }}>
+          <Stack.Screen name="First" component={FirstPage} />
+          <Stack.Screen name="Home" component={Tabs} />
+          {/* <FirstPage/>
+          <Tabs/> */}
+        </Stack.Navigator>
       </NavigationContainer>
+      
     </PaperProvider>
   );
 }

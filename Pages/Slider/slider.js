@@ -16,6 +16,7 @@ const imageURI4 = Asset.fromModule('../assets/re2.png').uri;
 export const Slider = () => {
   
   const [showRealApp, setShowRealApp] = useState(false)
+  console.log(imageURI)
   
   const onDone = () => {
     setShowRealApp(true)
