@@ -19,6 +19,7 @@ considering the requirement elicitation methodologies.
 
 ## Application Overview
 A mobile application developed to identify guava diseases and also gives the user information about the diseases detected.
+
 ![image](https://github.com/thihansa/GDetectio-App/assets/61136235/d8c0f905-5d8e-4cab-af17-b822374a11b7)
 
 
